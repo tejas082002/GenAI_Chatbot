@@ -1,6 +1,10 @@
 import streamlit as st
 import google.generativeai as genai
 from datetime import date
+import warnings
+
+warnings.filterwarnings('ignore')  # Suppress deprecation warnings from Google's GenAI library
+
 
 # Streamlit app configuration
 st.set_page_config(page_title="ChatBot", page_icon='🤖', layout='centered', initial_sidebar_state='collapsed')
